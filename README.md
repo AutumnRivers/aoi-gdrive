@@ -13,6 +13,7 @@ $ npm install aoi-gdrive
 * [Setup](#setup)
     - [Creating a project](#creating-a-project)
     - [Credentials](#credentials)
+        * [Getting an access token](#grabbing-tokens)
         * [Updating your access token](#updating-your-access-token)
 * [Usage](#usage)
     - [List Files](#list-files)
@@ -55,8 +56,11 @@ After this, an OAuth URL should be sent your console. Copy and paste it in your 
 
 **NOTE**  
 I do not collect any info! All this happens within *your* code. Go ahead, look through, I have nothing to hide.  
-After giving your consent to your own project, you should be redirected to `/yourCallbackURL?code=TOKEN`. Copy down this token, you need it for everything afterwards.  
+After giving your consent to your own project, you should be redirected to `/yourCallbackURL?code=AUTH_CODE`. Copy down this code, you need it for generating tokens.  
 You can now delete this js file, you don't need the OAuth anymore.  
+#### Grabbing tokens  
+Forget my previous commit; that isn't actually your token. But it does help get your token!  
+`<googleDrive>.getTokens(authCode)` will generate all the required tokens for you.   
 #### Updating your access token  
 Tokens don't last forever, obviously. That *is* why you're given an expiry date. But no worries! Updating your access token from your code is also VERY simple!  
 `<googleDrive>.updateAccess(accessToken, expiryDate, refreshToken)`  
