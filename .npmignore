@@ -1,0 +1,17 @@
+# Of course, hide this
+/node_modules/
+
+# Hide these too
+googleInfo.json
+googletokens.json
+client_info.json
+
+# Get rid of these files, they'll just uselessly take up space
+.gitignore
+.gitattributes
+/examples/
+/drive/
+oauth_example.js
+tokenGrabber.js
+aoi_promo.png
+aoi_support.png

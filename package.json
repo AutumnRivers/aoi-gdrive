@@ -1,0 +1,23 @@
+{
+  "name": "aoi-gdrive",
+  "version": "0.1.0",
+  "description": "Easily manage your Google Drive files from node.js!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "google",
+    "google-drive",
+    "aoi"
+  ],
+  "author": "SmartiePlays",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.3.2",
+    "googleapis": "^27.0.0"
+  },
+  "repository": {
+    "url": "https://github.com/SmartiePlays/aoi-gdrive"
+  }
+}
